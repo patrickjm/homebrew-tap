@@ -5,21 +5,21 @@
 class Www < Formula
   desc "Playwright-based CLI for persistent browser profiles and automation"
   homepage "https://github.com/patrickjm/www"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/patrickjm/www/releases/download/v0.1.6/www_0.1.6_darwin_amd64.tar.gz"
-      sha256 "053d35740493d3199ffafab111c8526133e5f254b176f8db41688170094f8b01"
+      url "https://github.com/patrickjm/www/releases/download/v0.1.7/www_0.1.7_darwin_amd64.tar.gz"
+      sha256 "928ce3fcad5ec3e20819914b8bdc83bb50ee47bdd6ee8d256d2dda54447e56e9"
 
       def install
         bin.install "www"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/patrickjm/www/releases/download/v0.1.6/www_0.1.6_darwin_arm64.tar.gz"
-      sha256 "fc948dd1137de176d35bf38583f64f096bd424e8bbed17fd4ad0c65fa689a02b"
+      url "https://github.com/patrickjm/www/releases/download/v0.1.7/www_0.1.7_darwin_arm64.tar.gz"
+      sha256 "00808708f0735eed3a1dab2b603928382c6d123266847f4550d6e0086ed51b9b"
 
       def install
         bin.install "www"
@@ -29,15 +29,15 @@ class Www < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/patrickjm/www/releases/download/v0.1.6/www_0.1.6_linux_amd64.tar.gz"
-      sha256 "bbb83318c4cbca235bfd9ceef8016686ef0879382c5e1bfdbefa4fbe1ff46b45"
+      url "https://github.com/patrickjm/www/releases/download/v0.1.7/www_0.1.7_linux_amd64.tar.gz"
+      sha256 "73f72d7ce907500953932540c116d61c7d247710e015d4734da264ffd8b55c62"
       def install
         bin.install "www"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/patrickjm/www/releases/download/v0.1.6/www_0.1.6_linux_arm64.tar.gz"
-      sha256 "fbbdb3b83b02147c25ad553e6dea4cad6da58630076536e465b397a411207d5d"
+      url "https://github.com/patrickjm/www/releases/download/v0.1.7/www_0.1.7_linux_arm64.tar.gz"
+      sha256 "3ea09ba628e6b5a4adb6fa95304a91de173791847d8b5292766b16ed9832bae4"
       def install
         bin.install "www"
       end
